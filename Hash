@@ -1,0 +1,19 @@
+#Hashing with haslib and salt made by - lordk
+
+import hashlib
+import os
+# Plugins above
+
+#Ask the user for password
+
+password = input("Enter your password: ")
+
+salt = os.urandom(16) #cryptography
+
+hashed_password = hashlib.sha512(salt + password.encode()).hexdigest() #sha256 is the amount of hashes given to encrypt a password. More numbers = better encryption (512) > (256)
+
+print("Your secure password with salt: ")
+print("salt (hex):", salt.hex())
+print("hash (hex):", hashed_password)
+#finished
+
