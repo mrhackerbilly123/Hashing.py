@@ -1,11 +1,11 @@
-# 🔐 Password Hasher with Salt (Python)
+#  Password Hasher with Salt (Python)
 
 A simple Python script that hashes a password using a random salt and the SHA-512 algorithm.  
 This shows how secure password storage works in real systems.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project uses Python’s built-in `hashlib` and `os` modules to:
 
@@ -17,7 +17,7 @@ You use this to understand how passwords are protected in databases.
 
 ---
 
-## ⚙️ Features
+##  Features
 
 - Secure random salt generation
 - Strong hashing with SHA-512
@@ -26,7 +26,7 @@ You use this to understand how passwords are protected in databases.
 
 ---
 
-## 🛠️ How It Works
+##  How It Works
 
 - You enter a password
 - A random 16-byte salt is created using `os.urandom()`
@@ -38,7 +38,7 @@ You use this to understand how passwords are protected in databases.
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 ### 1. Clone the repository
 ```bash
